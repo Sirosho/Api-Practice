@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 @ToString
 @EqualsAndHashCode
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class Player {
 
@@ -42,7 +43,7 @@ private LocalDateTime createdAt;
                 return position;
 
         }
-
+        throw new IllegalArgumentException("Unknown position: " + pos);
 
     }
 

@@ -19,6 +19,10 @@ public enum Position {
     Position(String name) {
         this.posName = name;
     }
+    @Override
+    public String toString() {
+        return posName;
+    }
 
 
 }
